@@ -16,6 +16,17 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '580930407770506');
     fbq('track', 'PageView');
+
+    var mockPurchaseValue = 149.99; 
+    var mockCurrency = 'BRL'; 
+
+    fbq('track', 'Purchase', {
+        value: mockPurchaseValue,
+        currency: mockCurrency
+    });
+
+    fbq('track', 'AddToCart');
+
     </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=580930407770506&ev=PageView&noscript=1"
